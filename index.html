@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Suhani Bharadwaj — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Suhani</a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Hi — I'm <span class="accent">Suhani</span></h1>
+        <p class="tagline">Second-year BCA student at GL Bajaj Institute of Management. I build front-end projects &amp; learn full-stack development.</p>
+        <p class="cta-row">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn btn-outline" href="#contact">Contact me</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I’m a web developer-in-training focused on HTML, CSS, JavaScript and React. I enjoy turning ideas into clean, responsive websites and learning new tools every week.</p>
+          <ul class="skills">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React (learning)</li><li>Git & GitHub</li>
+          </ul>
+        </div>
+        <div class="profile-card">
+          <img src="https://via.placeholder.com/250x250.png?text=Your+Photo" alt="Suhani" />
+          <p><strong>GL Bajaj Institute of Management</strong><br/>BCA — 2nd year</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <img src="https://via.placeholder.com/640x360.png?text=Project+1" alt="Project 1"/>
+          <h3>Personal Portfolio</h3>
+          <p>Responsive portfolio built with HTML, CSS and JavaScript. Includes project cards and contact section.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live</a> ·
+            <a href="#" target="_blank" rel="noopener">Code</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <img src="https://via.placeholder.com/640x360.png?text=Restaurant+Website" alt="Restaurant Website"/>
+          <h3>Restaurant Website</h3>
+          <p>A modern restaurant website featuring menu, reservation form, and responsive design. Built with HTML, CSS, and JavaScript.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live</a> ·
+            <a href="#" target="_blank" rel="noopener">Code</a>
+          </p>
+        </article>
+
+        <!-- Add more project articles as needed -->
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate, send me a message:</p>
+
+      <form id="contactForm" class="contact-form" action="#" onsubmit="return false;">
+        <label>
+          Name
+          <input type="text" id="name" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" id="email" name="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </label>
+
+        <div class="form-row">
+          <button id="sendBtn" class="btn" type="submit">Send message</button>
+          <span id="formStatus" class="form-status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Suhani Bharadwaj — Built with ❤️</p>
+      <p class="small">Made with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
